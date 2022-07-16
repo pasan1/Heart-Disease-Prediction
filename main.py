@@ -11,9 +11,9 @@ import pandas as pd
 import numpy as np
 import os
 
-root = tk.Tk()
+application = tk.Tk()
 
-canvas1 = tk.Canvas(root, width = 300, height = 300)
+canvas1 = tk.Canvas(application, width = 300, height = 300)
 canvas1.pack()
 
 def load_model():
@@ -52,5 +52,5 @@ button = tk.Button(text='Click Me', command=runGR, bg='brown', fg='white')
 
 canvas1.create_window(150,150,window=button)
 
-root.mainloop()
+application.mainloop()
 
